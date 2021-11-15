@@ -218,7 +218,7 @@ widgets = [
     widget.Battery(battery = 0 ,format='    {percent:2.0%} ', hide_threshold = 0.30, foreground = foreground, update_interval = 1),
     # Wifi
     widget.Net(foreground = red, interface = 'wlan0', format = '   NET {down} '),
-    widget.Net(foreground = red, interface = 'wlan0', format = '  NET {up} '),
+    widget.Net(foreground = green, interface = 'wlan0', format = '  NET {up} '),
     # CPU
     widget.CPU(foreground = yellow, format = '  CPU {freq_current}GHz {load_percent}%'
             ,mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(terminal + ' -e bashtop')}
